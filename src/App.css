@@ -1,0 +1,9 @@
+.header{
+  background: #282c34;
+  box-shadow: 0px 5px 10px lightslategray;
+  color: white;
+}
+
+.header__logo{
+padding: auto;
+}
