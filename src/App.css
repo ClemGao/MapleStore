@@ -7,3 +7,43 @@
 .header__logo{
 padding: auto;
 }
+
+.header__right{
+  text-align: right;
+}
+
+.auth{
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.auth-item{
+  text-decoration: none;
+  color: white;
+}
+
+.auth-item:hover{
+  text-decoration: none;
+  color: white;
+}
+
+.auth-item::after{
+  position: absolute;
+  content: "/";
+  right: 8px;
+}
+
+.auth-item:last-child::after{
+display: none;
+}
+
+.widget{
+  display:inline-block;
+}
+
+.widget-component{
+  list-style:none;
+  display:inline-block;
+  color: white;
+  margin-right: 20px;
+}
