@@ -1,24 +1,29 @@
 import React from 'react';
-import './_topmenu.scss';
+import "../TopMenu/_topmenu.scss";
 
-const menu = ['Men', 'Women', 'Children', 'bestSell'];
+const menu = ['Home', 'Women', 'Men', 'Kids', 'Best Seller'];
 
-function index() {
-    return (
-        <>
+const TopMenu = () => (
+    <>
+        <header className="menuHeader">
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-xl-12 col-lg-12">
-                        <nav>
+                        <nav className="menu">
                             <ul>
+                                {menu.map((item, index) => (
+                                    <li key={index}>
+                                        <a href="#">{item}</a>
+                                    </li>
+                                ))}
 
                             </ul>
                         </nav>
                     </div>
                 </div>
             </div>
-        </>
-    );
-}
+        </header>
+    </>
+)
 
-export default index;
+export default TopMenu;
